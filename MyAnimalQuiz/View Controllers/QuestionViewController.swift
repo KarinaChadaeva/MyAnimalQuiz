@@ -68,7 +68,12 @@ class QuestionViewController: UIViewController {
         nextQuestion()
     }
     
+    //MARK: - Navigation
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultVC = segue.destination as! FinalViewController
+        resultVC.answers = answerChosen
+    }
     
 }
 
