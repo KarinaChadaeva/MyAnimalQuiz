@@ -5,8 +5,6 @@
 //  Created by Карина Чадаева on 26.01.23.
 //
 
-import UIKit
-
 struct Answer {
     let text: String
     let type: AnimalType

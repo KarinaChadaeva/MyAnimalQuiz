@@ -14,7 +14,7 @@ enum ResponseType {
 struct Question {
     let text: String
     let type: ResponseType
-    let answer: [Answer]
+    let answers: [Answer]
 }
 
 extension Question {
@@ -23,7 +23,7 @@ extension Question {
             Question(
                 text: "Какую еду ты предпочитаешь?",
                 type: .single,
-                answer: [
+                answers: [
                     Answer(text: "Стейк", type: .dog),
                     Answer(text: "Рыба", type: .cat),
                     Answer(text: "Морковь", type: .rabbit),
@@ -33,7 +33,7 @@ extension Question {
             Question(
                 text: "Что ты любишь делать?",
                 type: .multiple,
-                answer: [
+                answers: [
                     Answer(text: "Плавать", type: .dog),
                     Answer(text: "Спать", type: .cat),
                     Answer(text: "Обниматься", type: .rabbit),
@@ -43,11 +43,11 @@ extension Question {
             Question(
                 text: "Любишь ли ты поездки на машине?",
                 type: .range,
-                answer: [
-                    Answer(text: "Обожаю", type: .dog),
+                answers: [
                     Answer(text: "Ненавижу", type: .cat),
-                    Answer(text: "Ненавижу", type: .rabbit),
-                    Answer(text: "Обожаю", type: .turtle)
+                    Answer(text: "Люблю", type: .turtle),
+                    Answer(text: "Равнодушно", type: .rabbit),
+                    Answer(text: "Обожаю", type: .dog)
                 ]
             )
         ]

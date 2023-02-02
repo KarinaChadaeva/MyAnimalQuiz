@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -144,7 +144,7 @@
                                             </attributedString>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="ruD-UF-v76" kind="show" id="m0D-zz-3kr"/>
+                                            <action selector="rangedButtonAnswerPressed" destination="t8T-A9-gUW" eventType="touchUpInside" id="2TW-mk-t6S"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -164,54 +164,42 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tx3-xa-0Ic">
                                         <rect key="frame" x="0.0" y="0.0" width="76.5" height="35"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Button">
-                                                    <attributes>
-                                                        <font key="NSFont" size="18" name="Helvetica"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleButtonsAnswerPressed:" destination="t8T-A9-gUW" eventType="touchUpInside" id="GN5-Is-Osc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RU5-b6-GKR">
                                         <rect key="frame" x="0.0" y="56" width="76.5" height="35"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Button">
-                                                    <attributes>
-                                                        <font key="NSFont" size="18" name="Helvetica"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleButtonsAnswerPressed:" destination="t8T-A9-gUW" eventType="touchUpInside" id="ZgP-VI-Zcy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8h-97-eDA">
                                         <rect key="frame" x="0.0" y="112" width="76.5" height="35"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Button">
-                                                    <attributes>
-                                                        <font key="NSFont" size="18" name="Helvetica"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleButtonsAnswerPressed:" destination="t8T-A9-gUW" eventType="touchUpInside" id="t3S-Zk-Rq3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfw-2K-0gs">
                                         <rect key="frame" x="0.0" y="168" width="76.5" height="35"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Button">
-                                                    <attributes>
-                                                        <font key="NSFont" size="18" name="Helvetica"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleButtonsAnswerPressed:" destination="t8T-A9-gUW" eventType="touchUpInside" id="AiL-Iq-LOI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -287,6 +275,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="multipleButtonAnswerPressed" destination="t8T-A9-gUW" eventType="touchUpInside" id="7Bo-qQ-qvI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -301,6 +292,7 @@
                             <constraint firstItem="ppX-ga-4wt" firstAttribute="leading" secondItem="1cJ-Mb-ohc" secondAttribute="leading" id="HRX-jO-oKM"/>
                             <constraint firstItem="1cJ-Mb-ohc" firstAttribute="trailing" secondItem="ppX-ga-4wt" secondAttribute="trailing" id="UW0-ix-t8l"/>
                             <constraint firstItem="eNC-ME-Mjl" firstAttribute="centerY" secondItem="aNk-gx-S98" secondAttribute="centerY" id="W55-KR-hFK"/>
+                            <constraint firstItem="1cJ-Mb-ohc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Uyg-LI-Z3a" secondAttribute="trailing" constant="63.5" id="XH7-Lk-J53"/>
                             <constraint firstItem="KUC-oA-9q6" firstAttribute="centerY" secondItem="aNk-gx-S98" secondAttribute="centerY" id="cGk-GD-sTB"/>
                             <constraint firstItem="1cJ-Mb-ohc" firstAttribute="trailing" secondItem="XwN-wS-I7a" secondAttribute="trailing" constant="16" id="eqC-RL-tTd"/>
                             <constraint firstItem="XwN-wS-I7a" firstAttribute="leading" secondItem="1cJ-Mb-ohc" secondAttribute="leading" constant="16" id="f1u-eU-kuf"/>
@@ -310,9 +302,29 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="1Uj-tj-4ws">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="SAv-9a-59F"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="AHX-Sc-Ouu"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="multipleStackView" destination="eNC-ME-Mjl" id="skq-gq-dcI"/>
+                        <outlet property="progressView" destination="ppX-ga-4wt" id="LEf-EV-qor"/>
+                        <outlet property="questionLabel" destination="Uyg-LI-Z3a" id="9c4-FA-KiH"/>
+                        <outlet property="rangeSlider" destination="NgA-0v-mOr" id="ony-8I-9Gb"/>
+                        <outlet property="rangeStackView" destination="XwN-wS-I7a" id="Rml-Ff-8of"/>
+                        <outlet property="singleStackView" destination="KUC-oA-9q6" id="emr-ka-VNb"/>
+                        <outletCollection property="multipleLabels" destination="uSy-7i-HKh" collectionClass="NSMutableArray" id="rPO-wD-68Q"/>
+                        <outletCollection property="multipleLabels" destination="dqA-Mo-3Rl" collectionClass="NSMutableArray" id="QUk-wm-0Vd"/>
+                        <outletCollection property="multipleLabels" destination="1ev-sc-cfv" collectionClass="NSMutableArray" id="OIy-Xh-5az"/>
+                        <outletCollection property="multipleLabels" destination="gvV-tu-ysF" collectionClass="NSMutableArray" id="dBp-kA-ycY"/>
+                        <outletCollection property="rangeLabels" destination="tVP-pV-pag" collectionClass="NSMutableArray" id="3Td-J1-dkX"/>
+                        <outletCollection property="rangeLabels" destination="miz-a8-eea" collectionClass="NSMutableArray" id="yQ4-hj-pKH"/>
+                        <outletCollection property="multipleSwitches" destination="0tj-GN-c5m" collectionClass="NSMutableArray" id="XKs-zI-9Wt"/>
+                        <outletCollection property="multipleSwitches" destination="YCN-Pc-a3Z" collectionClass="NSMutableArray" id="Vaz-HG-cVe"/>
+                        <outletCollection property="multipleSwitches" destination="YDt-kv-MHq" collectionClass="NSMutableArray" id="xlI-7q-28q"/>
+                        <outletCollection property="multipleSwitches" destination="z5o-qM-BLU" collectionClass="NSMutableArray" id="pGN-Df-ao6"/>
+                        <outletCollection property="singleButtons" destination="tx3-xa-0Ic" collectionClass="NSMutableArray" id="PrR-uU-tG1"/>
+                        <outletCollection property="singleButtons" destination="RU5-b6-GKR" collectionClass="NSMutableArray" id="Pph-j4-vFP"/>
+                        <outletCollection property="singleButtons" destination="g8h-97-eDA" collectionClass="NSMutableArray" id="GXs-BZ-ycg"/>
+                        <outletCollection property="singleButtons" destination="xfw-2K-0gs" collectionClass="NSMutableArray" id="wvR-uw-MkX"/>
                         <segue destination="ruD-UF-v76" kind="show" identifier="showResult" id="YZB-3f-7hk"/>
                     </connections>
                 </viewController>
@@ -355,10 +367,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Результаты" id="NoN-sj-s4I">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="hu3-5g-aZW"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="hu3-5g-aZW">
+                            <connections>
+                                <segue destination="47H-Iw-sxG" kind="unwind" unwindAction="unwindFor:" id="aKr-FN-aw6"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DKl-up-bse" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="47H-Iw-sxG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2218" y="80"/>
         </scene>
@@ -381,9 +398,6 @@
             <point key="canvasLocation" x="765.60000000000002" y="79.610194902548727"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="YZB-3f-7hk"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
